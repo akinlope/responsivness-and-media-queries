@@ -81,6 +81,10 @@ body {
   color: white;
   font-family: "Open Sans", sans-serif;
 }
+.holder1 button:hover{
+  background-color: hsl(322, 67%, 83%);
+  transition: 0.3s;
+}
 
 .grow {
   border: none;
@@ -199,7 +203,7 @@ body {
   border-radius: 10px;
   bottom: -325%;
   padding-top: 50px;
-  margin-left: 30%;
+  margin-left: 25%;
   padding-bottom: 50px;
   width: 50%;
   position: absolute;
@@ -224,9 +228,12 @@ body {
   margin-left: 200px;
   margin-top: 10px;
   width: 300px;
-  /* font-size: 18px; */
   color: white;
   font-family: "Open Sans", sans-serif;
+}
+.build button:hover{
+  background-color: hsl(322, 67%, 83%);
+  transition: 0.3s;
 }
 
 footer {
@@ -352,8 +359,9 @@ footer {
 
 @media (max-width: 375px) {
   body{
-    background-image: url("/images/bg-hero-mobile.svg");
+    /* background-image: url("/images/bg-hero-mobile.svg"); */
     width: 100%;
+    padding: 20px;
     
   }
 
@@ -362,8 +370,34 @@ footer {
     flex-direction: column;
   }
   img{
-    width: 50%;
-    height: 50%;
+    width: 300px;
+    height: 100px;
   }
   
+  h1{
+    font-size: 1rem;
+  }
+  h2{
+    font-size: 0.9rem;
+  }
+  .grow{
+    display: flex;
+    flex-direction: column;
+  }
+  .conversation {
+    display: flex;
+    flex-direction: column;
+  }
+  .user{
+    display: flex;
+    flex-direction: column;
+  }
+  .build{
+    display: flex;
+    flex-direction: column;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+  }
 }
